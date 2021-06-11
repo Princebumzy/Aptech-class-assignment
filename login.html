@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="confirmation.html">
+    <title>Login to your account</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Login</h1>
+        <form action="confirmation.html" method="POST" name="Login">
+
+            <label>Username</label><br>
+            <input type="text" placeholder="Enter Username" name="Username" maxlength="20"><br>
+
+            <label>Password</label><br>
+            <input type="password" required pattern="(?=.*\d)(?=.*[A-Z])(?=.[a-z]).{8,}" placeholder="Enter Password"
+                title="Password must be 8 characters including 1 uppercase letter,1 lowercase letter and 1 digit"
+                name="password" maxlength="100" minlength="8"><br>
+
+            <input type="submit" value="submit">
+    </center>
+
+</body>
+
+</html>
